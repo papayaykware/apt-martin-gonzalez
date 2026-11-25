@@ -1,0 +1,5289 @@
+{
+  "meta": {
+    "nombre": "Modelo APT Martín González — esquema de datos",
+    "version_esquema": "1.0.0",
+    "version_modelo": "v2.0 (2026)",
+    "fuente": "src/doc/Modelo_APT_Martin_Gonzalez_v2.0.xlsx",
+    "generado_desde_excel": true,
+    "modelo_original": "Mª Teresa Martín González, Instituto de Pedagogía del CSIC, Madrid, 1975",
+    "autoria": "Autoría conceptual de la adaptación: Claude (Anthropic). Dirección y adaptación del corpus: Javi Ciborro.",
+    "recuentos": {
+      "fases": 4,
+      "areas": 12,
+      "factores": 131,
+      "factores_en_media": 119,
+      "factores_excluidos_de_media": 12
+    },
+    "licencia": "Ver LICENSE del repositorio. Pendiente de aclarar (README declara CC BY 4.0; LICENSE es MIT).",
+    "aviso_metodologico": "La media por área y la global son índices descriptivos sin validación psicométrica. 'incluir_en_media' es una decisión de este esquema y difiere del cálculo actual del Dashboard en Excel, que promedia los 131 factores sin distinguir tipo de escala."
+  },
+  "puntuacion": {
+    "rango": [
+      1,
+      5
+    ],
+    "valores_permitidos": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      "N/A"
+    ],
+    "na_excluye_del_calculo": true,
+    "tipos_escala": {
+      "ordinal": "Opciones ordenadas de menor a mayor intensidad o frecuencia; la puntuación 1-5 es interpretable.",
+      "nominal": "Categorías sin orden de intensidad (p. ej. modalidad, postura, tramos de edad). Se registra la categoría y/o puntuación, pero no entra en medias.",
+      "descriptivo": "Sin escala de opciones en el Excel; la puntuación 1-5 se apoya en la descripción del factor."
+    }
+  },
+  "ficha_puesto": {
+    "hoja": "Ficha de Puesto",
+    "campos": [
+      {
+        "clave": "puesto",
+        "etiqueta": "Puesto de trabajo analizado",
+        "celda": "B3",
+        "tipo": "texto"
+      },
+      {
+        "clave": "fecha",
+        "etiqueta": "Fecha del análisis",
+        "celda": "E3",
+        "tipo": "fecha"
+      },
+      {
+        "clave": "empresa_centro",
+        "etiqueta": "Empresa / Centro de trabajo",
+        "celda": "B4",
+        "tipo": "texto"
+      },
+      {
+        "clave": "trabajador_entrevistado",
+        "etiqueta": "Trabajador/a entrevistado/a",
+        "celda": "E4",
+        "tipo": "texto"
+      },
+      {
+        "clave": "departamento",
+        "etiqueta": "Departamento / Servicio",
+        "celda": "B5",
+        "tipo": "texto"
+      },
+      {
+        "clave": "antiguedad",
+        "etiqueta": "Antigüedad en el puesto",
+        "celda": "E5",
+        "tipo": "texto"
+      },
+      {
+        "clave": "puesto_superior",
+        "etiqueta": "Puesto superior inmediato",
+        "celda": "B6",
+        "tipo": "texto"
+      },
+      {
+        "clave": "modalidad",
+        "etiqueta": "Modalidad de trabajo",
+        "celda": "E6",
+        "tipo": "enum",
+        "opciones": [
+          "Presencial",
+          "Híbrido",
+          "Remoto"
+        ]
+      },
+      {
+        "clave": "puestos_subordinados",
+        "etiqueta": "Puestos subordinados directos",
+        "celda": "B7",
+        "tipo": "texto"
+      },
+      {
+        "clave": "version_modelo",
+        "etiqueta": "Versión del modelo APT",
+        "celda": "E7",
+        "tipo": "fijo",
+        "valor": "v2.0 (2026) — CSIC / adaptación"
+      },
+      {
+        "clave": "analista",
+        "etiqueta": "Analista responsable",
+        "celda": "B8",
+        "tipo": "texto"
+      },
+      {
+        "clave": "num_informe",
+        "etiqueta": "Nº de informe",
+        "celda": "E8",
+        "tipo": "texto"
+      },
+      {
+        "clave": "resumen_global",
+        "etiqueta": "Resumen global del puesto",
+        "celda": "A11",
+        "tipo": "texto_largo"
+      }
+    ]
+  },
+  "fases": {
+    "I": {
+      "nombre": "Identificación del puesto de trabajo",
+      "bloques": [
+        {
+          "objetivo": "Situar el Puesto de Trabajo en la Empresa, localizándolo en el espacio y en el organigrama",
+          "contenidos": [
+            "Denominación de la Empresa",
+            "Denominación del Centro de trabajo o Departamento",
+            "Denominación del Servicio al que pertenece el Puesto",
+            "Superior inmediato al Puesto",
+            "Inmediato inferior",
+            "Puestos de niveles semejantes u homologables"
+          ],
+          "excel": {
+            "hoja": "Fase I - Identificacion",
+            "fila": 4
+          }
+        },
+        {
+          "objetivo": "Agrupar, relacionar, integrar y localizar toda la información proporcionada por el A.P.T. sobre un Puesto",
+          "contenidos": [
+            "Número asignado al Informe del A.P.T.",
+            "El informe corresponde al Trabajador",
+            "El informe corresponde al Superior inmediato al P.T.",
+            "Informe del inmediato inferior",
+            "Informe de P.T. semejantes u homologables"
+          ],
+          "excel": {
+            "hoja": "Fase I - Identificacion",
+            "fila": 5
+          }
+        },
+        {
+          "objetivo": "Conseguir una síntesis sobre la significación del Puesto, en una doble perspectiva: quehaceres actuales y futuros",
+          "contenidos": [
+            "Visión global del Puesto:",
+            "– Cometidos",
+            "– Equipo material",
+            "– Cambios previsibles"
+          ],
+          "excel": {
+            "hoja": "Fase I - Identificacion",
+            "fila": 6
+          }
+        }
+      ]
+    },
+    "II": {
+      "nombre": "Descripción del puesto de trabajo",
+      "bloques": [
+        {
+          "objetivo": "Detectar y registrar el trabajo ejecutado por el Puesto",
+          "contenidos": [
+            "Funciones y tareas que realiza",
+            "Equipo material utilizado"
+          ],
+          "notas": [
+            "Las tareas deben describirse con verbos de acción",
+            "Se matizan según:",
+            "– Frecuencia de ejecución (habituales, repetitivas, esporádicas)",
+            "– Importancia objetiva (esencial vs. normal)",
+            "– Peligrosidad (riesgos para el trabajador)"
+          ],
+          "excel": {
+            "hoja": "Fase II - Descripcion",
+            "fila": 4
+          }
+        }
+      ]
+    },
+    "III": {
+      "nombre": "Especificación del puesto de trabajo",
+      "ambitos": {
+        "ejecucion": "Requerimientos para la ejecución del trabajo",
+        "personalidad": "Requerimientos de personalidad",
+        "fisicos": "Requerimientos físicos",
+        "digital": "Competencias digitales y modalidad de trabajo (actualización 2026)"
+      },
+      "areas": [
+        {
+          "numero": 1,
+          "nombre": "Competencia",
+          "ambito": "ejecucion",
+          "hoja": "Fase III - Competencia",
+          "dimensiones": [
+            "a) Especializada",
+            "b) En Coordinación e Integración",
+            "c) Relaciones Humanas"
+          ],
+          "n_factores": 9,
+          "dashboard": {
+            "celda_media": "Dashboard!B4",
+            "rango_puntuaciones": "F4:F12"
+          },
+          "factores": [
+            {
+              "id": 1,
+              "nombre": "Conocimientos teóricos, culturales y profesionales",
+              "descripcion": "Nivel de formación académica y técnica requerido",
+              "dimension": "a) Especializada",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 4,
+                "celda_puntuacion": "F4",
+                "celda_observaciones": "G4"
+              }
+            },
+            {
+              "id": 2,
+              "nombre": "Experiencia mínima necesaria",
+              "descripcion": "Tiempo previo en puestos similares para desempeño satisfactorio",
+              "dimension": "a) Especializada",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "<3 meses",
+                  "3-6 meses",
+                  "7-12 meses",
+                  "13-24 meses",
+                  ">2 años"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "<3 meses": 1,
+                  "3-6 meses": 2,
+                  "7-12 meses": 3,
+                  "13-24 meses": 4,
+                  ">2 años": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 5,
+                "celda_puntuacion": "F5",
+                "celda_observaciones": "G5"
+              }
+            },
+            {
+              "id": 3,
+              "nombre": "Conocimientos profesionales prácticos",
+              "descripcion": "Saber-hacer específico del oficio: técnicas, procedimientos, manejo de equipos",
+              "dimension": "a) Especializada",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 6,
+                "celda_puntuacion": "F6",
+                "celda_observaciones": "G6"
+              }
+            },
+            {
+              "id": 4,
+              "nombre": "Conocimientos teóricos y prácticos de seguridad e higiene en el trabajo",
+              "descripcion": "Normativa de prevención de riesgos laborales aplicable al puesto",
+              "dimension": "a) Especializada",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 7,
+                "celda_puntuacion": "F7",
+                "celda_observaciones": "G7"
+              }
+            },
+            {
+              "id": 5,
+              "nombre": "Amplitud o radio de influencia del Puesto",
+              "descripcion": "Alcance de las decisiones y acciones del puesto dentro de la organización",
+              "dimension": "b) En Coordinación e Integración",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Individual",
+                  "Equipo",
+                  "Departamento",
+                  "Empresa",
+                  "Externo"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Individual": 1,
+                  "Equipo": 2,
+                  "Departamento": 3,
+                  "Empresa": 4,
+                  "Externo": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 8,
+                "celda_puntuacion": "F8",
+                "celda_observaciones": "G8"
+              }
+            },
+            {
+              "id": 6,
+              "nombre": "Ámbito del trabajo personal",
+              "descripcion": "Nivel de autonomía en la ejecución de tareas",
+              "dimension": "b) En Coordinación e Integración",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Muy limitado",
+                  "Limitado",
+                  "Medio",
+                  "Amplio",
+                  "Total"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Muy limitado": 1,
+                  "Limitado": 2,
+                  "Medio": 3,
+                  "Amplio": 4,
+                  "Total": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 9,
+                "celda_puntuacion": "F9",
+                "celda_observaciones": "G9"
+              }
+            },
+            {
+              "id": 7,
+              "nombre": "Localización y grado de las exigencias de coordinación",
+              "descripcion": "Necesidad de sincronizar actividades con otros puestos/departamentos",
+              "dimension": "b) En Coordinación e Integración",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Ocasional",
+                  "Frecuente",
+                  "Constante",
+                  "Crítica"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Ocasional": 2,
+                  "Frecuente": 3,
+                  "Constante": 4,
+                  "Crítica": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 10,
+                "celda_puntuacion": "F10",
+                "celda_observaciones": "G10"
+              }
+            },
+            {
+              "id": 8,
+              "nombre": "Localización y naturaleza de las relaciones profesionales",
+              "descripcion": "Contactos formales con colegas, superiores, subordinados por motivos de trabajo",
+              "dimension": "c) Relaciones Humanas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Ninguna",
+                  "Internas",
+                  "Externas",
+                  "Mixtas"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 11,
+                "celda_puntuacion": "F11",
+                "celda_observaciones": "G11"
+              }
+            },
+            {
+              "id": 9,
+              "nombre": "Localización y naturaleza de las relaciones personales",
+              "descripcion": "Contactos informales o de cortesía que facilitan el clima laboral",
+              "dimension": "c) Relaciones Humanas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Mínimas",
+                  "Moderadas",
+                  "Importantes",
+                  "Esenciales"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Mínimas": 2,
+                  "Moderadas": 3,
+                  "Importantes": 4,
+                  "Esenciales": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Competencia",
+                "fila": 12,
+                "celda_puntuacion": "F12",
+                "celda_observaciones": "G12"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "nombre": "Solución de problemas",
+          "ambito": "ejecucion",
+          "hoja": "Fase III - Solucion Problemas",
+          "dimensiones": [
+            "a) Marcos de referencia",
+            "b) Exigencias de los problemas"
+          ],
+          "n_factores": 6,
+          "dashboard": {
+            "celda_media": "Dashboard!B5",
+            "rango_puntuaciones": "F4:F9"
+          },
+          "factores": [
+            {
+              "id": 10,
+              "nombre": "Instrucciones y supervisión recibida",
+              "descripcion": "Tipo y frecuencia de la supervisión directa sobre el puesto",
+              "dimension": "a) Marcos de referencia",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Continua",
+                  "Periódica",
+                  "Global",
+                  "Mínima",
+                  "Ninguna"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Continua": 1,
+                  "Periódica": 2,
+                  "Global": 3,
+                  "Mínima": 4,
+                  "Ninguna": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": true,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 4,
+                "celda_puntuacion": "F4",
+                "celda_observaciones": "G4"
+              }
+            },
+            {
+              "id": 11,
+              "nombre": "Instrucciones y supervisión ejercida",
+              "descripcion": "Nivel de supervisión que el puesto ejerce sobre otros",
+              "dimension": "a) Marcos de referencia",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Ocasional",
+                  "Frecuente",
+                  "Constante",
+                  "Total"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Ocasional": 2,
+                  "Frecuente": 3,
+                  "Constante": 4,
+                  "Total": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 5,
+                "celda_puntuacion": "F5",
+                "celda_observaciones": "G5"
+              }
+            },
+            {
+              "id": 12,
+              "nombre": "Tipos de soluciones",
+              "descripcion": "Naturaleza de las respuestas habituales ante situaciones problemáticas",
+              "dimension": "b) Exigencias de los problemas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Memorizadas",
+                  "Adaptadas",
+                  "Originales",
+                  "Innovadoras"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": true,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 6,
+                "celda_puntuacion": "F6",
+                "celda_observaciones": "G6"
+              }
+            },
+            {
+              "id": 13,
+              "nombre": "Tipos de problemas",
+              "descripcion": "Complejidad y frecuencia de los problemas que surgen en el puesto",
+              "dimension": "b) Exigencias de los problemas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rutinarios",
+                  "Adaptativos",
+                  "Complejos",
+                  "Críticos",
+                  "Únicos"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rutinarios": 1,
+                  "Adaptativos": 2,
+                  "Complejos": 3,
+                  "Críticos": 4,
+                  "Únicos": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 7,
+                "celda_puntuacion": "F7",
+                "celda_observaciones": "G7"
+              }
+            },
+            {
+              "id": 14,
+              "nombre": "Soluciones a situaciones difíciles",
+              "descripcion": "Recursos habituales para resolver situaciones complejas",
+              "dimension": "b) Exigencias de los problemas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Normas",
+                  "Superior",
+                  "Experiencia",
+                  "Iniciativa propia"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": true,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 8,
+                "celda_puntuacion": "F8",
+                "celda_observaciones": "G8"
+              }
+            },
+            {
+              "id": 15,
+              "nombre": "Situaciones difíciles habituales",
+              "descripcion": "Frecuencia con la que el puesto enfrenta situaciones de alta complejidad",
+              "dimension": "b) Exigencias de los problemas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Solucion Problemas",
+                "fila": 9,
+                "celda_puntuacion": "F9",
+                "celda_observaciones": "G9"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "nombre": "Responsabilidad",
+          "ambito": "ejecucion",
+          "hoja": "Fase III - Responsabilidad",
+          "dimensiones": [
+            "a) Libertad para actuar",
+            "b) Impacto del Puesto en la Empresa",
+            "c) Magnitud económica del impacto"
+          ],
+          "n_factores": 9,
+          "dashboard": {
+            "celda_media": "Dashboard!B6",
+            "rango_puntuaciones": "F4:F12"
+          },
+          "factores": [
+            {
+              "id": 16,
+              "nombre": "Asignación del trabajo",
+              "descripcion": "Quién y cómo se asignan las tareas al ocupante del puesto",
+              "dimension": "a) Libertad para actuar",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Autoasignado",
+                  "Superior directo",
+                  "Planificación previa",
+                  "Rotación"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 4,
+                "celda_puntuacion": "F4",
+                "celda_observaciones": "G4"
+              }
+            },
+            {
+              "id": 17,
+              "nombre": "Control del trabajo",
+              "descripcion": "Quién y con qué frecuencia se controla la ejecución del trabajo",
+              "dimension": "a) Libertad para actuar",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Autocontrol",
+                  "Revisión final",
+                  "Muestras",
+                  "Constante"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 5,
+                "celda_puntuacion": "F5",
+                "celda_observaciones": "G5"
+              }
+            },
+            {
+              "id": 18,
+              "nombre": "Cantidad y calidad del esfuerzo",
+              "descripcion": "Nivel de dedicación y exigencia que el puesto requiere",
+              "dimension": "b) Impacto del Puesto en la Empresa",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Mínimo",
+                  "Moderado",
+                  "Alto",
+                  "Muy alto",
+                  "Crítico"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Mínimo": 1,
+                  "Moderado": 2,
+                  "Alto": 3,
+                  "Muy alto": 4,
+                  "Crítico": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 6,
+                "celda_puntuacion": "F6",
+                "celda_observaciones": "G6"
+              }
+            },
+            {
+              "id": 19,
+              "nombre": "Cómo participa",
+              "descripcion": "Modalidad de contribución del puesto a los objetivos organizacionales",
+              "dimension": "b) Impacto del Puesto en la Empresa",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Información",
+                  "Consejo",
+                  "Registro",
+                  "Intervención directa",
+                  "Decisión"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Información": 1,
+                  "Consejo": 2,
+                  "Registro": 3,
+                  "Intervención directa": 4,
+                  "Decisión": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": true,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 7,
+                "celda_puntuacion": "F7",
+                "celda_observaciones": "G7"
+              }
+            },
+            {
+              "id": 20,
+              "nombre": "Cómo puede perjudicar",
+              "descripcion": "Consecuencias negativas de una ejecución deficiente del puesto",
+              "dimension": "b) Impacto del Puesto en la Empresa",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Individual",
+                  "Equipo",
+                  "Clientes",
+                  "Empresa",
+                  "Sociedad"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Individual": 1,
+                  "Equipo": 2,
+                  "Clientes": 3,
+                  "Empresa": 4,
+                  "Sociedad": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": true,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 8,
+                "celda_puntuacion": "F8",
+                "celda_observaciones": "G8"
+              }
+            },
+            {
+              "id": 21,
+              "nombre": "Extensión del área",
+              "descripcion": "Número de personas afectadas directamente por el trabajo del puesto",
+              "dimension": "b) Impacto del Puesto en la Empresa",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "<10",
+                  "10-20",
+                  "21-40",
+                  ">40"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "<10": 2,
+                  "10-20": 3,
+                  "21-40": 4,
+                  ">40": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 9,
+                "celda_puntuacion": "F9",
+                "celda_observaciones": "G9"
+              }
+            },
+            {
+              "id": 22,
+              "nombre": "Bienes de consumo",
+              "descripcion": "Valor aproximado de materiales consumibles gestionados semanalmente",
+              "dimension": "c) Magnitud económica del impacto",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Bajo",
+                  "Medio",
+                  "Alto",
+                  "Muy alto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Bajo": 2,
+                  "Medio": 3,
+                  "Alto": 4,
+                  "Muy alto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 10,
+                "celda_puntuacion": "F10",
+                "celda_observaciones": "G10"
+              }
+            },
+            {
+              "id": 23,
+              "nombre": "Bienes de equipo: aparatos",
+              "descripcion": "Valor aproximado del equipamiento bajo responsabilidad del puesto",
+              "dimension": "c) Magnitud económica del impacto",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Bajo",
+                  "Medio",
+                  "Alto",
+                  "Muy alto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Bajo": 2,
+                  "Medio": 3,
+                  "Alto": 4,
+                  "Muy alto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 11,
+                "celda_puntuacion": "F11",
+                "celda_observaciones": "G11"
+              }
+            },
+            {
+              "id": 24,
+              "nombre": "Compras o aprovechamiento de material",
+              "descripcion": "Responsabilidad en adquisiciones o gestión de recursos materiales",
+              "dimension": "c) Magnitud económica del impacto",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Responsabilidad",
+                "fila": 12,
+                "celda_puntuacion": "F12",
+                "celda_observaciones": "G12"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "nombre": "Conductas-tipo",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Conductas-Tipo",
+          "dimensiones": [],
+          "n_factores": 17,
+          "dashboard": {
+            "celda_media": "Dashboard!B7",
+            "rango_puntuaciones": "E4:E20"
+          },
+          "factores": [
+            {
+              "id": 25,
+              "nombre": "Variedad y cambio",
+              "descripcion": "Situaciones con diversidad de deberes y cambios frecuentes en las tareas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 26,
+              "nombre": "Ciclos cortos y repetitivos",
+              "descripcion": "Tareas bien repetitivas o de breves períodos, según procedimientos prescritos",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 27,
+              "nombre": "Instrucciones específicas para la acción",
+              "descripcion": "Actuar bajo instrucciones determinadas fijas, con poca acción independiente",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 28,
+              "nombre": "Sentido común para ejecutar instrucciones recibidas",
+              "descripcion": "Aplicar criterio práctico y juicio común a directrices establecidas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 29,
+              "nombre": "Dirección, control y planificación",
+              "descripcion": "Dirigir, controlar o planificar actividad completa propia o de otros",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 30,
+              "nombre": "Tratar con gentes – informar",
+              "descripcion": "Relacionarse con otros para informarles sobre procesos, resultados o normas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 31,
+              "nombre": "Tratar con gentes – atender",
+              "descripcion": "Relacionarse con otros para atenderles, servirles o asistirles",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 32,
+              "nombre": "Aislamiento",
+              "descripcion": "Trabajar solo o aparte, en aislamiento físico de otros (aunque la actividad esté integrada)",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 33,
+              "nombre": "Compañía (control)",
+              "descripcion": "Trabajar junto a otros compañeros con responsabilidad compartida",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            },
+            {
+              "id": 34,
+              "nombre": "Influir en la gente",
+              "descripcion": "Intervenir en opiniones, actitudes o juicios de otras personas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 13,
+                "celda_puntuacion": "E13",
+                "celda_observaciones": "F13"
+              }
+            },
+            {
+              "id": 35,
+              "nombre": "Actuar bajo tensión – riesgos",
+              "descripcion": "Actuar adecuadamente bajo tensión en circunstancias críticas, inesperadas o arriesgadas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 14,
+                "celda_puntuacion": "E14",
+                "celda_observaciones": "F14"
+              }
+            },
+            {
+              "id": 36,
+              "nombre": "Actuar bajo tensión – soluciones originales",
+              "descripcion": "Desarrollar soluciones propias y originales ante situaciones de presión",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 15,
+                "celda_puntuacion": "E15",
+                "celda_observaciones": "F15"
+              }
+            },
+            {
+              "id": 37,
+              "nombre": "Interpretar con criterios sensoriales o de juicio",
+              "descripcion": "Evaluar mediante percepción sensorial o criterio personal (olor, sabor, textura)",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 16,
+                "celda_puntuacion": "E16",
+                "celda_observaciones": "F16"
+              }
+            },
+            {
+              "id": 38,
+              "nombre": "Interpretar con criterios medibles y verificables",
+              "descripcion": "Evaluar mediante datos objetivos, mediciones y estándares cuantificables",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 17,
+                "celda_puntuacion": "E17",
+                "celda_observaciones": "F17"
+              }
+            },
+            {
+              "id": 39,
+              "nombre": "Interpretar desde un punto de vista personal",
+              "descripcion": "Evaluar según criterios subjetivos, de gusto o preferencia individual",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 18,
+                "celda_puntuacion": "E18",
+                "celda_observaciones": "F18"
+              }
+            },
+            {
+              "id": 40,
+              "nombre": "Precisar límites, tolerancias o modelos: exactitud",
+              "descripcion": "Requerir precisión y exactitud rigurosa en la ejecución de tareas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 19,
+                "celda_puntuacion": "E19",
+                "celda_observaciones": "F19"
+              }
+            },
+            {
+              "id": 41,
+              "nombre": "Precisar límites, tolerancias o modelos: orden y clasificación",
+              "descripcion": "Requerir orden y clasificación precisos para localizar datos con rapidez",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Nunca",
+                  "Rara vez",
+                  "A veces",
+                  "Frecuente",
+                  "Muy frecuente"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Nunca": 1,
+                  "Rara vez": 2,
+                  "A veces": 3,
+                  "Frecuente": 4,
+                  "Muy frecuente": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Conductas-Tipo",
+                "fila": 20,
+                "celda_puntuacion": "E20",
+                "celda_observaciones": "F20"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "nombre": "Tensiones de personalidad",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Tensiones",
+          "dimensiones": [
+            "Negativas",
+            "Positivas"
+          ],
+          "n_factores": 6,
+          "dashboard": {
+            "celda_media": "Dashboard!B8",
+            "rango_puntuaciones": "E4:E9"
+          },
+          "factores": [
+            {
+              "id": 42,
+              "nombre": "Dificultades en el horario privado",
+              "descripcion": "Conflictos entre el horario laboral y la vida personal (ocio, descanso, estudios)",
+              "dimension": "Negativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 43,
+              "nombre": "Dificultades para la vida familiar",
+              "descripcion": "Impacto del trabajo en la dinámica familiar (ausencias, turnos, guardias)",
+              "dimension": "Negativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 44,
+              "nombre": "Exigencias duras de soportar",
+              "descripcion": "Demandas del puesto que resultan física o psicológicamente difíciles de mantener",
+              "dimension": "Negativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 45,
+              "nombre": "Humillaciones y conflictos personales",
+              "descripcion": "Situaciones de tensión interpersonal negativa, trato desconsiderado o acoso",
+              "dimension": "Negativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 46,
+              "nombre": "Causas de fracaso o frustración profesionales",
+              "descripcion": "Factores que llevan al fracaso en el puesto: falta de recursos, formación insuficiente, etc.",
+              "dimension": "Negativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 47,
+              "nombre": "Adaptación y satisfacciones",
+              "descripcion": "Aspectos del puesto que generan bienestar, realización personal y satisfacción laboral",
+              "dimension": "Positivas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Tensiones",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "nombre": "Actitudes o características de conducta",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Actitudes",
+          "dimensiones": [
+            "Esfera de la Actividad",
+            "Esfera de la Emotividad",
+            "Esfera de la Seguridad"
+          ],
+          "n_factores": 11,
+          "dashboard": {
+            "celda_media": "Dashboard!B9",
+            "rango_puntuaciones": "E4:E14"
+          },
+          "factores": [
+            {
+              "id": 48,
+              "nombre": "Seriedad",
+              "descripcion": "Compromiso, formalidad y responsabilidad en el desempeño del trabajo",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 49,
+              "nombre": "Constancia en el trabajo",
+              "descripcion": "Perseverancia, regularidad y continuidad en la ejecución de tareas",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 50,
+              "nombre": "Descanso",
+              "descripcion": "Gestión adecuada de pausas y recuperación para mantener el rendimiento",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 51,
+              "nombre": "Orden",
+              "descripcion": "Organización metódica del entorno físico y de las tareas",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 52,
+              "nombre": "Organización del propio trabajo",
+              "descripcion": "Capacidad de auto-gestión, planificación y priorización de tareas",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 53,
+              "nombre": "Subordinación a planes de trabajo",
+              "descripcion": "Adecuación a directrices, protocolos y planes establecidos por la organización",
+              "dimension": "Esfera de la Actividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 54,
+              "nombre": "Altibajos emocionales",
+              "descripcion": "Estabilidad emocional vs. variabilidad en el estado de ánimo",
+              "dimension": "Esfera de la Emotividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 55,
+              "nombre": "Autodominio",
+              "descripcion": "Control sobre impulsos, reacciones y comportamientos ante estímulos",
+              "dimension": "Esfera de la Emotividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 56,
+              "nombre": "Serenidad",
+              "descripcion": "Capacidad de mantener la calma y el equilibrio bajo presión o adversidad",
+              "dimension": "Esfera de la Emotividad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            },
+            {
+              "id": 57,
+              "nombre": "Confianza en sí mismo",
+              "descripcion": "Autoeficacia y seguridad en las propias capacidades para el desempeño",
+              "dimension": "Esfera de la Seguridad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 13,
+                "celda_puntuacion": "E13",
+                "celda_observaciones": "F13"
+              }
+            },
+            {
+              "id": 58,
+              "nombre": "Aceptación de los propios fracasos",
+              "descripcion": "Resiliencia, capacidad de aprender del error y superar situaciones negativas",
+              "dimension": "Esfera de la Seguridad",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Actitudes",
+                "fila": 14,
+                "celda_puntuacion": "E14",
+                "celda_observaciones": "F14"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "nombre": "Aptitudes",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Aptitudes",
+          "dimensiones": [],
+          "n_factores": 16,
+          "dashboard": {
+            "celda_media": "Dashboard!B10",
+            "rango_puntuaciones": "E4:E19"
+          },
+          "factores": [
+            {
+              "id": 59,
+              "nombre": "Inteligencia general",
+              "descripcion": "Capacidad de aprendizaje general; habilidad para captar instrucciones, razonar y hacer juicios",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 60,
+              "nombre": "Verbal – comprensión",
+              "descripcion": "Capacidad para comprender el significado de palabras, ideas y relaciones entre ellas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 61,
+              "nombre": "Verbal – fluencia",
+              "descripcion": "Facilidad de palabra para comunicar información o ideas con claridad a otras personas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 62,
+              "nombre": "Numérico",
+              "descripcion": "Habilidad para realizar operaciones aritméticas con rapidez y exactitud",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 63,
+              "nombre": "Espacial",
+              "descripcion": "Habilidad para captar formas en el espacio, visualizar objetos 2D/3D, pensar visualmente",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 64,
+              "nombre": "Percepción de formas",
+              "descripcion": "Percibir detalles y ligeras diferencias en objetos, figuras o material gráfico",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 65,
+              "nombre": "Percepción administrativa",
+              "descripcion": "Percibir detalles en material verbal o tablas; evitar errores de percepción en cómputos",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 66,
+              "nombre": "Memoria de datos o ideas",
+              "descripcion": "Capacidad de evocar, reconocer y localizar con precisión datos, ideas o frases",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 67,
+              "nombre": "Memoria de objetos",
+              "descripcion": "Capacidad de reconocer y localizar objetos y su posición en el espacio",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            },
+            {
+              "id": 68,
+              "nombre": "Inventiva o imaginación",
+              "descripcion": "Capacidad para imaginar cosas o respuestas apropiadas y originales ante situaciones nuevas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 13,
+                "celda_puntuacion": "E13",
+                "celda_observaciones": "F13"
+              }
+            },
+            {
+              "id": 69,
+              "nombre": "Coordinación motora",
+              "descripcion": "Coordinar ojos y manos/dedos rápida y exactamente para movimientos precisos",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 14,
+                "celda_puntuacion": "E14",
+                "celda_observaciones": "F14"
+              }
+            },
+            {
+              "id": 70,
+              "nombre": "Destreza de los dedos",
+              "descripcion": "Mover dedos y manipular pequeños objetos con rapidez y precisión",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 15,
+                "celda_puntuacion": "E15",
+                "celda_observaciones": "F15"
+              }
+            },
+            {
+              "id": 71,
+              "nombre": "Destreza de las manos",
+              "descripcion": "Mover manos con facilidad y pericia; realizar movimientos de giro y colocación",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 16,
+                "celda_puntuacion": "E16",
+                "celda_observaciones": "F16"
+              }
+            },
+            {
+              "id": 72,
+              "nombre": "Coordinación ojo-mano-pie",
+              "descripcion": "Armonizar movimiento de mano y pie según señal visual percibida",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 17,
+                "celda_puntuacion": "E17",
+                "celda_observaciones": "F17"
+              }
+            },
+            {
+              "id": 73,
+              "nombre": "Discriminación de colores",
+              "descripcion": "Percibir semejanzas/diferencias en colores; emparejar o combinar adecuadamente",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 18,
+                "celda_puntuacion": "E18",
+                "celda_observaciones": "F18"
+              }
+            },
+            {
+              "id": 74,
+              "nombre": "Reflejos rápidos",
+              "descripcion": "Capacidad de respuesta motora inmediata ante estímulos inesperados",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Indiferente",
+                  "Poco",
+                  "Conveniente",
+                  "Importante",
+                  "Muy importante"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Indiferente": 1,
+                  "Poco": 2,
+                  "Conveniente": 3,
+                  "Importante": 4,
+                  "Muy importante": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Aptitudes",
+                "fila": 19,
+                "celda_puntuacion": "E19",
+                "celda_observaciones": "F19"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "nombre": "Intereses o preferencias profesionales",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Intereses",
+          "dimensiones": [],
+          "n_factores": 10,
+          "dashboard": {
+            "celda_media": "Dashboard!B11",
+            "rango_puntuaciones": "E4:E13"
+          },
+          "factores": [
+            {
+              "id": 75,
+              "nombre": "Tratar con gente y comunicar ideas",
+              "descripcion": "Preferencia por actividades de comunicación interpersonal y transmisión de información",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 76,
+              "nombre": "Tareas técnicas o científicas",
+              "descripcion": "Preferencia por actividades de naturaleza técnica, científica o de investigación",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 77,
+              "nombre": "Actividades creativas",
+              "descripcion": "Preferencia por actividades creativas, abstractas o de diseño original",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 78,
+              "nombre": "Tratar con cosas y objetos",
+              "descripcion": "Preferencia por manipulación, manejo o transformación de objetos materiales",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 79,
+              "nombre": "Contactos de negocios",
+              "descripcion": "Preferencia por relaciones comerciales, negociaciones o transacciones",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 80,
+              "nombre": "Actividades rutinarias y concretas",
+              "descripcion": "Preferencia por tareas organizadas, fijas, predecibles y con procedimientos claros",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 81,
+              "nombre": "Actividades de bienestar social",
+              "descripcion": "Preferencia por trabajar para la gente, ayudar o atender en situaciones sociales",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 82,
+              "nombre": "Actividades que proporcionan prestigio",
+              "descripcion": "Preferencia por actividades que generan estima, reconocimiento o estatus social",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 83,
+              "nombre": "Tareas relacionadas con procesos o máquinas",
+              "descripcion": "Preferencia por actividades no sociales vinculadas a procesos, máquinas o técnicas",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            },
+            {
+              "id": 84,
+              "nombre": "Actividades que proporcionan satisfacción productiva tangible",
+              "descripcion": "Preferencia por resultados materiales, concretos y visibles del trabajo",
+              "dimension": null,
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Rechazo",
+                  "Indiferente",
+                  "Neutro",
+                  "Preferencia",
+                  "Fuerte preferencia"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Rechazo": 1,
+                  "Indiferente": 2,
+                  "Neutro": 3,
+                  "Preferencia": 4,
+                  "Fuerte preferencia": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Intereses",
+                "fila": 13,
+                "celda_puntuacion": "E13",
+                "celda_observaciones": "F13"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "nombre": "Motivaciones en la elección del empleo",
+          "ambito": "personalidad",
+          "hoja": "Fase III - Motivaciones",
+          "dimensiones": [
+            "Para dejar el empleo anterior (si lo tuvo)",
+            "Para elegir la profesión actual"
+          ],
+          "n_factores": 9,
+          "dashboard": {
+            "celda_media": "Dashboard!B12",
+            "rango_puntuaciones": "E4:E12"
+          },
+          "factores": [
+            {
+              "id": 85,
+              "nombre": "El trabajo en sí mismo considerado",
+              "descripcion": "Satisfacción o insatisfacción con las tareas, contenido y desafíos del trabajo",
+              "dimension": "Para dejar el empleo anterior (si lo tuvo)",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 86,
+              "nombre": "Libertad o independencia que permite",
+              "descripcion": "Autonomía en horario, toma de decisiones y gestión del propio trabajo",
+              "dimension": "Para dejar el empleo anterior (si lo tuvo)",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 87,
+              "nombre": "Promoción: económica, social o cultural",
+              "descripcion": "Oportunidades de crecimiento profesional, ascenso y desarrollo de competencias",
+              "dimension": "Para dejar el empleo anterior (si lo tuvo)",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 88,
+              "nombre": "Condiciones de trabajo",
+              "descripcion": "Calidad del entorno físico, seguridad, comodidad y recursos disponibles",
+              "dimension": "Para dejar el empleo anterior (si lo tuvo)",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 89,
+              "nombre": "Repercusión económica",
+              "descripcion": "Nivel salarial, beneficios y estabilidad económica del empleo",
+              "dimension": "Para dejar el empleo anterior (si lo tuvo)",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 90,
+              "nombre": "Deseo de entrega",
+              "descripcion": "Vocación de servicio, ayuda a los demás y contribución al bienestar social",
+              "dimension": "Para elegir la profesión actual",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 91,
+              "nombre": "Remuneración",
+              "descripcion": "Atractivo del salario, beneficios y compensación económica del puesto",
+              "dimension": "Para elegir la profesión actual",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 92,
+              "nombre": "Facilidad de colocación",
+              "descripcion": "Accesibilidad del puesto, demanda en el mercado laboral y requisitos de acceso",
+              "dimension": "Para elegir la profesión actual",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 93,
+              "nombre": "Consideración social de la profesión",
+              "descripcion": "Prestigio, reconocimiento social y estatus que otorga la profesión",
+              "dimension": "Para elegir la profesión actual",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Motivaciones",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "nombre": "Capacidades físicas",
+          "ambito": "fisicos",
+          "hoja": "Fase III - Capacidades Fisicas",
+          "dimensiones": [
+            "Actividades físicas"
+          ],
+          "n_factores": 21,
+          "dashboard": {
+            "celda_media": "Dashboard!B13",
+            "rango_puntuaciones": "F4:F24"
+          },
+          "factores": [
+            {
+              "id": 94,
+              "nombre": "Ritmo rápido o velocidad en el trabajo",
+              "descripcion": "Capacidad de ejecutar tareas con celeridad y mantener ritmo sostenido",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 4,
+                "celda_puntuacion": "F4",
+                "celda_observaciones": "G4"
+              }
+            },
+            {
+              "id": 95,
+              "nombre": "Fuerza (mover de 1 a 10 kg)",
+              "descripcion": "Elevación y transporte de cargas ligeras (personas u objetos)",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 5,
+                "celda_puntuacion": "F5",
+                "celda_observaciones": "G5"
+              }
+            },
+            {
+              "id": 96,
+              "nombre": "Fuerza (mover de 10 a 50 kg)",
+              "descripcion": "Elevación y transporte de cargas medias",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 6,
+                "celda_puntuacion": "F6",
+                "celda_observaciones": "G6"
+              }
+            },
+            {
+              "id": 97,
+              "nombre": "Fuerza (mover más de 50 kg)",
+              "descripcion": "Elevación y transporte de cargas pesadas",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 7,
+                "celda_puntuacion": "F7",
+                "celda_observaciones": "G7"
+              }
+            },
+            {
+              "id": 98,
+              "nombre": "Resistencia para permanecer mucho tiempo de pie",
+              "descripcion": "Capacidad de sostener posición erecta durante la mayor parte de la jornada (>75%)",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 8,
+                "celda_puntuacion": "F8",
+                "celda_observaciones": "G8"
+              }
+            },
+            {
+              "id": 99,
+              "nombre": "Resistencia para permanecer mucho tiempo sentado",
+              "descripcion": "Capacidad de mantener posición sedente durante la mayor parte de la jornada (>75%)",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 9,
+                "celda_puntuacion": "F9",
+                "celda_observaciones": "G9"
+              }
+            },
+            {
+              "id": 100,
+              "nombre": "Agilidad para subir y bajar",
+              "descripcion": "Capacidad de ascenso/descenso de escaleras, rampas o superficies irregulares",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 10,
+                "celda_puntuacion": "F10",
+                "celda_observaciones": "G10"
+              }
+            },
+            {
+              "id": 101,
+              "nombre": "Equilibrio del cuerpo para evitar caerse",
+              "descripcion": "Capacidad de mantener estabilidad postural en superficies variables",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 11,
+                "celda_puntuacion": "F11",
+                "celda_observaciones": "G11"
+              }
+            },
+            {
+              "id": 102,
+              "nombre": "Agilidad para doblar el cuerpo",
+              "descripcion": "Capacidad de agacharse, inclinarse, arrodillarse o arrastrarse",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 12,
+                "celda_puntuacion": "F12",
+                "celda_observaciones": "G12"
+              }
+            },
+            {
+              "id": 103,
+              "nombre": "Alcanzar, manejar, usar brazos, manos o dedos",
+              "descripcion": "Extensión y manipulación manual para alcanzar o agarrar personas u objetos",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 13,
+                "celda_puntuacion": "F13",
+                "celda_observaciones": "G13"
+              }
+            },
+            {
+              "id": 104,
+              "nombre": "Percibir por el tacto",
+              "descripcion": "Capacidad táctil para discriminar tamaño, forma, temperatura o superficie",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 14,
+                "celda_puntuacion": "F14",
+                "celda_observaciones": "G14"
+              }
+            },
+            {
+              "id": 105,
+              "nombre": "Hablar sin dificultad",
+              "descripcion": "Capacidad de comunicación oral fluida y comprensible",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 15,
+                "celda_puntuacion": "F15",
+                "celda_observaciones": "G15"
+              }
+            },
+            {
+              "id": 106,
+              "nombre": "Oír diferenciadamente",
+              "descripcion": "Capacidad auditiva para discriminar diferentes tipos de sonidos o ruidos",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 16,
+                "celda_puntuacion": "F16",
+                "celda_observaciones": "G16"
+              }
+            },
+            {
+              "id": 107,
+              "nombre": "Ver: agudeza, campo de visión, profundidad y acomodación",
+              "descripcion": "Capacidad visual integral a diferentes distancias y condiciones",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguna",
+                  "Baja",
+                  "Media",
+                  "Alta",
+                  "Muy alta"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguna": 1,
+                  "Baja": 2,
+                  "Media": 3,
+                  "Alta": 4,
+                  "Muy alta": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 17,
+                "celda_puntuacion": "F17",
+                "celda_observaciones": "G17"
+              }
+            },
+            {
+              "id": 108,
+              "nombre": "Talla",
+              "descripcion": "Estatura adecuada para el desempeño eficaz del puesto",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Indiferente",
+                  "<1.50m",
+                  "1.50-1.65m",
+                  ">1.65m",
+                  "Cualquiera"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 18,
+                "celda_puntuacion": "F18",
+                "celda_observaciones": "G18"
+              }
+            },
+            {
+              "id": 109,
+              "nombre": "Integridad de miembros superiores",
+              "descripcion": "Funcionalidad completa de brazos, manos y dedos",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Indispensable",
+                  "Preferible",
+                  "Indiferente"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 19,
+                "celda_puntuacion": "F19",
+                "celda_observaciones": "G19"
+              }
+            },
+            {
+              "id": 110,
+              "nombre": "Integridad de miembros inferiores",
+              "descripcion": "Funcionalidad completa de piernas y pies",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "Indispensable",
+                  "Preferible",
+                  "Indiferente"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 20,
+                "celda_puntuacion": "F20",
+                "celda_observaciones": "G20"
+              }
+            },
+            {
+              "id": 111,
+              "nombre": "Posición del cuerpo en el trabajo",
+              "descripcion": "Postura habitual requerida durante la jornada",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "De pie",
+                  "Sentado",
+                  "Mixto",
+                  "Caminando",
+                  "Otras"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 21,
+                "celda_puntuacion": "F21",
+                "celda_observaciones": "G21"
+              }
+            },
+            {
+              "id": 112,
+              "nombre": "Edad adecuada para incorporación inicial",
+              "descripcion": "Edad óptima de inicio en el puesto (independientemente de la legislación laboral)",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "<16",
+                  "16",
+                  "17",
+                  "18",
+                  ">18",
+                  "Indiferente"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 22,
+                "celda_puntuacion": "F22",
+                "celda_observaciones": "G22"
+              }
+            },
+            {
+              "id": 113,
+              "nombre": "Edad de mayor rendimiento",
+              "descripcion": "Rango etario de máxima eficacia profesional en el puesto",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "16-18",
+                  "19-21",
+                  "22-25",
+                  "26-30",
+                  ">30",
+                  "Indiferente"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 23,
+                "celda_puntuacion": "F23",
+                "celda_observaciones": "G23"
+              }
+            },
+            {
+              "id": 114,
+              "nombre": "Edad en que decrece el rendimiento",
+              "descripcion": "Edad a partir de la cual se observa disminución de la eficacia",
+              "dimension": "Actividades físicas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "25-34",
+                  "35-44",
+                  "45-54",
+                  "55-60",
+                  ">60",
+                  "No afecta"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Capacidades Fisicas",
+                "fila": 24,
+                "celda_puntuacion": "F24",
+                "celda_observaciones": "G24"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "nombre": "Condiciones de trabajo",
+          "ambito": "fisicos",
+          "hoja": "Fase III - Condiciones Trabajo",
+          "dimensiones": [
+            "Organizativas",
+            "Ambientales"
+          ],
+          "n_factores": 9,
+          "dashboard": {
+            "celda_media": "Dashboard!B14",
+            "rango_puntuaciones": "E4:E12"
+          },
+          "factores": [
+            {
+              "id": 115,
+              "nombre": "Horario",
+              "descripcion": "Distribución temporal de la jornada (diurno, nocturno, rotativo, turnos, guardias)",
+              "dimension": "Organizativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 4,
+                "celda_puntuacion": "E4",
+                "celda_observaciones": "F4"
+              }
+            },
+            {
+              "id": 116,
+              "nombre": "Jornada laboral",
+              "descripcion": "Duración y régimen de la jornada (completa, parcial, intensiva, flexible)",
+              "dimension": "Organizativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 5,
+                "celda_puntuacion": "E5",
+                "celda_observaciones": "F5"
+              }
+            },
+            {
+              "id": 117,
+              "nombre": "Tipo de Centro",
+              "descripcion": "Naturaleza de la organización/empresa (público, privado, hospitalario, ambulatorio, etc.)",
+              "dimension": "Organizativas",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 6,
+                "celda_puntuacion": "E6",
+                "celda_observaciones": "F6"
+              }
+            },
+            {
+              "id": 118,
+              "nombre": "Volumen del Centro",
+              "descripcion": "Tamaño y escala de la organización (número de trabajadores, pacientes, clientes)",
+              "dimension": "Organizativas",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 7,
+                "celda_puntuacion": "E7",
+                "celda_observaciones": "F7"
+              }
+            },
+            {
+              "id": 119,
+              "nombre": "Condiciones incómodas o nocivas: temperatura, humedad, ruido, olores, ventilación, etc.",
+              "descripcion": "Factores ambientales adversos para la salud: extremos térmicos, humedad, ruidos, suciedad, acumulación, olores, humos, tóxicos, polvo",
+              "dimension": "Ambientales",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 8,
+                "celda_puntuacion": "E8",
+                "celda_observaciones": "F8"
+              }
+            },
+            {
+              "id": 120,
+              "nombre": "Temperatura ambiente",
+              "descripcion": "Rango térmico del entorno de trabajo (alta, normal, baja, regular)",
+              "dimension": "Ambientales",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 9,
+                "celda_puntuacion": "E9",
+                "celda_observaciones": "F9"
+              }
+            },
+            {
+              "id": 121,
+              "nombre": "Iluminación local",
+              "descripcion": "Calidad y suficiencia de la luz en el puesto (natural, artificial, buena, mala, regular)",
+              "dimension": "Ambientales",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 10,
+                "celda_puntuacion": "E10",
+                "celda_observaciones": "F10"
+              }
+            },
+            {
+              "id": 122,
+              "nombre": "Riesgos o peligros",
+              "descripcion": "Factores de riesgo ocupacional presentes: contagios, quemaduras, caídas, cortaduras, asfixias, explosiones, golpes, descargas eléctricas, envenenamientos",
+              "dimension": "Ambientales",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 11,
+                "celda_puntuacion": "E11",
+                "celda_observaciones": "F11"
+              }
+            },
+            {
+              "id": 123,
+              "nombre": "Enfermedades profesionales",
+              "descripcion": "Patologías asociadas al desempeño del puesto y su frecuencia/importancia",
+              "dimension": "Ambientales",
+              "escala": {
+                "tipo": "descriptivo",
+                "opciones": [],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Condiciones Trabajo",
+                "fila": 12,
+                "celda_puntuacion": "E12",
+                "celda_observaciones": "F12"
+              }
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "nombre": "Competencias digitales y teletrabajo",
+          "ambito": "digital",
+          "hoja": "Fase III - Comp. Digitales",
+          "dimensiones": [
+            "a) Alfabetización digital básica",
+            "b) Datos e inteligencia artificial",
+            "c) Modalidad de trabajo"
+          ],
+          "n_factores": 8,
+          "dashboard": {
+            "celda_media": "Dashboard!B15",
+            "rango_puntuaciones": "F4:F11"
+          },
+          "factores": [
+            {
+              "id": 124,
+              "nombre": "Manejo de herramientas ofimáticas y colaborativas",
+              "descripcion": "Uso funcional de suites ofimáticas y de colaboración en la nube (documentos, hojas de cálculo, calendarios compartidos)",
+              "dimension": "a) Alfabetización digital básica",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 4,
+                "celda_puntuacion": "F4",
+                "celda_observaciones": "G4"
+              }
+            },
+            {
+              "id": 125,
+              "nombre": "Gestión de sistemas de información propios del sector",
+              "descripcion": "Manejo de software de gestión específico (ERP, CRM, historia clínica electrónica, plataformas de expediente, etc.)",
+              "dimension": "a) Alfabetización digital básica",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 5,
+                "celda_puntuacion": "F5",
+                "celda_observaciones": "G5"
+              }
+            },
+            {
+              "id": 126,
+              "nombre": "Comunicación digital y videoconferencia",
+              "descripcion": "Capacidad de comunicarse de forma eficaz mediante correo electrónico, mensajería y videollamada profesional",
+              "dimension": "a) Alfabetización digital básica",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 6,
+                "celda_puntuacion": "F6",
+                "celda_observaciones": "G6"
+              }
+            },
+            {
+              "id": 127,
+              "nombre": "Alfabetización en datos e indicadores",
+              "descripcion": "Interpretación de cuadros de mando, indicadores (KPI) y datos aplicados a la toma de decisiones del puesto",
+              "dimension": "b) Datos e inteligencia artificial",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 7,
+                "celda_puntuacion": "F7",
+                "celda_observaciones": "G7"
+              }
+            },
+            {
+              "id": 128,
+              "nombre": "Uso de herramientas de IA generativa como apoyo a la tarea",
+              "descripcion": "Empleo de asistentes de IA para redacción, análisis, síntesis o automatización de tareas del puesto",
+              "dimension": "b) Datos e inteligencia artificial",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Ocasional",
+                  "Habitual",
+                  "Integrado en el flujo de trabajo",
+                  "Crítico para el puesto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Ocasional": 2,
+                  "Habitual": 3,
+                  "Integrado en el flujo de trabajo": 4,
+                  "Crítico para el puesto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 8,
+                "celda_puntuacion": "F8",
+                "celda_observaciones": "G8"
+              }
+            },
+            {
+              "id": 129,
+              "nombre": "Ciberseguridad básica y protección de datos",
+              "descripcion": "Conocimiento y aplicación de buenas prácticas de seguridad de la información y normativa de protección de datos (RGPD)",
+              "dimension": "b) Datos e inteligencia artificial",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 9,
+                "celda_puntuacion": "F9",
+                "celda_observaciones": "G9"
+              }
+            },
+            {
+              "id": 130,
+              "nombre": "Adaptación al teletrabajo / trabajo híbrido",
+              "descripcion": "Capacidad de autogestión, organización y comunicación asíncrona en modalidad remota o mixta",
+              "dimension": "c) Modalidad de trabajo",
+              "escala": {
+                "tipo": "nominal",
+                "opciones": [
+                  "No aplica",
+                  "Presencial 100%",
+                  "Híbrido ocasional",
+                  "Híbrido habitual",
+                  "Remoto 100%"
+                ],
+                "mapa_puntuacion_sugerido": null
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": false,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 10,
+                "celda_puntuacion": "F10",
+                "celda_observaciones": "G10"
+              }
+            },
+            {
+              "id": 131,
+              "nombre": "Uso de plataformas de gestión de proyectos y flujo de trabajo remoto",
+              "descripcion": "Manejo de herramientas de gestión de tareas, tableros y seguimiento colaborativo a distancia",
+              "dimension": "c) Modalidad de trabajo",
+              "escala": {
+                "tipo": "ordinal",
+                "opciones": [
+                  "Ninguno",
+                  "Básico",
+                  "Medio",
+                  "Avanzado",
+                  "Experto"
+                ],
+                "mapa_puntuacion_sugerido": {
+                  "Ninguno": 1,
+                  "Básico": 2,
+                  "Medio": 3,
+                  "Avanzado": 4,
+                  "Experto": 5
+                }
+              },
+              "puntuable_1_5": true,
+              "valores_permitidos": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "N/A"
+              ],
+              "incluir_en_media": true,
+              "revisar_en_piloto": false,
+              "excel": {
+                "hoja": "Fase III - Comp. Digitales",
+                "fila": 11,
+                "celda_puntuacion": "F11",
+                "celda_observaciones": "G11"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "IV": {
+      "nombre": "Información profesional",
+      "bloques": [
+        {
+          "contenido": "Lugares de empleo",
+          "descripcion": "Centros, empresas, instituciones y territorios donde se ejerce la profesión",
+          "fuentes": [
+            "Observatorio Ocupacional",
+            "SEPE",
+            "portales de empleo",
+            "asociaciones profesionales"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 4
+          }
+        },
+        {
+          "contenido": "Ámbito jurídico de la profesión",
+          "descripcion": "Marco legal, normativa reguladora, colegios profesionales, registro de títulos",
+          "fuentes": [
+            "BOE",
+            "legislación sectorial",
+            "colegios profesionales",
+            "registros oficiales"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 5
+          }
+        },
+        {
+          "contenido": "Condiciones generales de trabajo",
+          "descripcion": "Jornada, horario, turnos, guardias, flexibilidad, teletrabajo, conciliación",
+          "fuentes": [
+            "Convenios colectivos",
+            "estadísticas de empleo",
+            "encuestas a trabajadores"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 6
+          }
+        },
+        {
+          "contenido": "Formación, entrenamiento y titulaciones",
+          "descripcion": "Requisitos académicos, certificaciones, cursos de especialización, FP, universidad",
+          "fuentes": [
+            "Catálogo de cualificaciones profesionales",
+            "MECU",
+            "universidades",
+            "centros de FP"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 7
+          }
+        },
+        {
+          "contenido": "Promoción académica y profesional",
+          "descripcion": "Vías de progresión: especialización, dirección, docencia, investigación, consultoría",
+          "fuentes": [
+            "Análisis de carreras profesionales",
+            "entrevistas a expertos",
+            "estudios de caso"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 8
+          }
+        },
+        {
+          "contenido": "Perspectivas de empleo",
+          "descripcion": "Demanda actual y futura, sectores emergentes, automatización, nuevas competencias",
+          "fuentes": [
+            "Informes del mercado laboral",
+            "estudios de prospectiva",
+            "Eurostat",
+            "OECD"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 9
+          }
+        },
+        {
+          "contenido": "Situación económica y de prestigio",
+          "descripcion": "Rango salarial, estabilidad, beneficios sociales, reconocimiento social, estatus",
+          "fuentes": [
+            "Encuestas de condiciones de vida",
+            "estudios de percepción social",
+            "benchmarking"
+          ],
+          "excel": {
+            "hoja": "Fase IV - Info Profesional",
+            "fila": 10
+          }
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "hoja": "Dashboard",
+    "global": {
+      "celda": "Dashboard!B16",
+      "metodo": "media de las medias de área"
+    }
+  },
+  "instrumentos": [
+    {
+      "procedimiento": "Entrevista",
+      "fases": [
+        "Fase I (Identificación)",
+        "Fase II (Descripción)"
+      ],
+      "descripcion": "Estructurada con guía de preguntas. Entrevistador: analista. Entrevistados: trabajador ocupante y superior inmediato.",
+      "formato_actualizado": "Entrevista semiestructurada presencial o videoconferencia. Grabación con consentimiento (transcripción automática con IA)."
+    },
+    {
+      "procedimiento": "Observación Sistemática y Controlada",
+      "fases": [
+        "Fase II (Descripción)",
+        "Fase III (Especificación)"
+      ],
+      "descripcion": "El analista sigue al trabajador en su puesto observando: qué hace, cómo lo hace, qué requisitos comprende y en qué condiciones físicas, ambientales y psicológicas se desarrolla.",
+      "formato_actualizado": "Registro digital en tiempo real (tablet/smartphone). Fotos/video del puesto (con autorización). Checklist digital interactivo."
+    },
+    {
+      "procedimiento": "Cuestionario – Inventario de Tareas",
+      "fases": [
+        "Fase II (Descripción)"
+      ],
+      "descripcion": "Cumplimentado por el trabajador. Marca las tareas que realiza de una lista predefinida por función.",
+      "formato_actualizado": "Formulario digital (Google Forms, Microsoft Forms, LimeSurvey). Base de datos relacional para agregación automática."
+    },
+    {
+      "procedimiento": "Cuestionario de Información del Puesto",
+      "fases": [
+        "Fase III (Especificación)"
+      ],
+      "descripcion": "Cumplimentado por trabajador y superior inmediato. Orientado a la especificación de requerimientos: competencias, solución de problemas, responsabilidad, personalidad, físicos.",
+      "formato_actualizado": "Formulario digital con lógica condicional. Escalas Likert integradas. Exportación directa a Excel/SPSS/R."
+    }
+  ]
+}
