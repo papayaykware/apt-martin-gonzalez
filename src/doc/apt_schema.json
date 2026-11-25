@@ -14,7 +14,7 @@
       "factores_en_media": 119,
       "factores_excluidos_de_media": 12
     },
-    "licencia": "Ver LICENSE del repositorio. Pendiente de aclarar (README declara CC BY 4.0; LICENSE es MIT).",
+    "licencia": "CC BY-NC 4.0 (texto completo en LICENSE.md del repositorio). No altera los derechos sobre el modelo original de 1975.",
     "aviso_metodologico": "La media por área y la global son índices descriptivos sin validación psicométrica. 'incluir_en_media' es una decisión de este esquema y difiere del cálculo actual del Dashboard en Excel, que promedia los 131 factores sin distinguir tipo de escala."
   },
   "puntuacion": {

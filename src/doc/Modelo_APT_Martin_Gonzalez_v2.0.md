@@ -316,4 +316,4 @@ El Excel calcula, para cada una de las 12 áreas, la media de las puntuaciones i
 
 ---
 
-Licencia y condiciones de reutilización: ver el archivo `LICENSE` del repositorio.
+Licencia: Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0). Texto completo en `LICENSE.md`. Los derechos sobre el modelo original de 1975 no se ven alterados por esta licencia (ver README).
